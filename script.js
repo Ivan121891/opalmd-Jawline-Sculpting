@@ -2,7 +2,7 @@
   "use strict";
 
   // ------- Configuration -------
-  const SERVICE_NAME = "Jawline Sculpting Treatment";
+  const SERVICE_NAME = "Jawline Sculpting";
   const SERVICE_DURATION_MIN = 60;
 
   // GHL credentials
@@ -281,8 +281,8 @@
         lastName: lastName || '-',
         email,
         phone,
-        source: 'Jawline Sculpting LP',
-        tags: ['Jawline Sculpting Treatment'],
+        source: 'Opal MD - Jawline Sculpting',
+        tags: ['Jawline Sculpting'],
       });
       const contactId = contactRes.contact?.id || contactRes.id;
 
@@ -297,7 +297,7 @@
         assignedUserId: GHL.userId,
         startTime:      isoInTz(start, BUSINESS_TZ),
         endTime:        isoInTz(end,   BUSINESS_TZ),
-        title:          `${name} — Jawline Sculpting Treatment`,
+        title:          `${name} — Jawline Sculpting`,
         appointmentStatus: 'confirmed',
         selectedTimezone: BUSINESS_TZ,
       });
